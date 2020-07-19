@@ -1,0 +1,210 @@
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #55DAFD;
+	display: table;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Haut de Page */
+
+
+div#header1{
+	position: absolute;
+	top: 15px;
+	left: 180px;
+}
+
+div#titre h1{
+	font-style: italic;
+	text-decoration: underline;
+	color: white;
+	text-shadow: 3px 3px 6px black;
+	font-size: 100px;
+}
+
+div#image{
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+div#titre, #image{
+	display: inline-block;
+}
+
+div#header2{
+	position: absolute;
+	left: 180px;
+	top: 170px;
+}
+
+div#niveauEcole, #commune{
+	display: inline-block;
+}
+
+div#header2 h2{
+	color: white;
+	text-shadow: 1px 2px 4px black;
+	font-size: 55px;	
+}
+
+div#commune{
+	padding-left: 265px;
+}
+
+div#header3{
+	position: absolute;
+	top: 260px;
+	left: 1080px; 
+}
+
+div#header3 h3{
+	color: white;
+	text-shadow: 1px 2px 4px black;
+	font-size: 30px;
+	font-style: italic;
+}
+
+
+
+
+/* Menu de Navigation */
+
+nav{
+	position: absolute;
+	top: 380px;
+	left: 184px;
+	right: 199px;
+	background: linear-gradient(#1A50D1, #0139B9, #0139B9, #1A50D1);
+	border-radius: 10px 10px 0px 0px;
+	z-index: 1000;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+	border-right: 0.5px solid black;
+	padding: 0px 50px 0px 50px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: white;
+	font-size: 23px;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li{
+	border-bottom: 1px solid black;
+	background-color: rgba(2, 46, 148, 0.95);
+	float: left;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 17px;
+	color: white;
+	width: 180px;
+}
+
+.submenu2{
+	display: none;
+}
+
+nav ul.submenu li:hover .submenu2{
+	display: inline-block;
+	position: absolute;
+	left: 240px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu2 li{
+	border-bottom: 1px solid black;
+	background-color: rgba(2, 46, 148, 0.95);
+	float: left;
+}
+
+.submenu2 li a{
+	padding: 15px 30px;
+	font-size: 17px;
+	color: white;
+	width: 180px;
+}
+
+
+
+
+/* Contenu */
+
+div#content{
+	position: absolute;
+	background-color: #F6F6F6;
+	width: 1520px;
+	box-shadow: 3px 3px 10px black;
+	left: 184px;
+	top: 445px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+div#content h1{
+	margin-left: 50px;
+	text-decoration: underline;
+	font-style: italic; 
+	text-shadow: 0.5px 1px 1px black;
+	font-size: 50px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+div#content img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+div#content p{
+	padding: 20px 50px 100px 50px;
+}
+
+
+/* Pieds de Page */
+
